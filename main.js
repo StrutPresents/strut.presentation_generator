@@ -1,5 +1,5 @@
 if (typeof define !== 'function') { var define = require('amdefine')(module) }
-define(['ServiceRegistry.js'],
+define(['ServiceRegistry'],
 function(SR) {
 	// Service will be a service collection of the available backends?
 	return {
