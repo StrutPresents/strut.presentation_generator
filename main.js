@@ -1,10 +1,10 @@
 if (typeof define !== 'function') { var define = require('amdefine')(module) }
-define(['framework/ServiceCollection'],
-function(ServiceCollection) {
+define(['ServiceRegistry.js'],
+function(SR) {
 	// Service will be a service collection of the available backends?
 	return {
 		initialize: function(registry) {
-			var service = new ServiceCollection(registry,
+			var service = new SR.ServiceCollection(registry,
 				'strut.presentation_generator',
 				function(entry) { return entry.service(); });
 
