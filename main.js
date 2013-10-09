@@ -1,3 +1,4 @@
+if (typeof define !== 'function') { var define = require('amdefine')(module) }
 define(['framework/ServiceCollection'],
 function(ServiceCollection) {
 	// Service will be a service collection of the available backends?
